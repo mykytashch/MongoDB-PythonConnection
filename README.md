@@ -20,8 +20,8 @@ This guide provides a simple, effective way to practice connecting, writing, and
 ```
 from pymongo import MongoClient
 
-uri = 'mongodb+srv://tosniki91:N25kbverb@clustervkapture.b6tox4s.mongodb.net'
-password = 'N25kbverb'
+uri = 'mongodb+srv://tosniki91:your_password@clustervkapture.b6tox4s.mongodb.net'
+password = 'your_password'
 
 client = MongoClient(uri, password=password)
 db = client.sample_mflix
