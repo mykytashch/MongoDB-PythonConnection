@@ -1,7 +1,5 @@
 # MongoDB-PythonConnection
 
-## MongoDB-PythonConnection
-
 This repository provides a simple guide and code examples for connecting to a MongoDB database using Python, as well as storing and retrieving data.
 
 ### Prerequisites
