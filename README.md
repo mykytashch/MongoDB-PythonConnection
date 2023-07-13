@@ -2,7 +2,7 @@
 # MongoDB-PythonConnection: A Hands-on Guide
 
 ## Introduction
-MongoDB-PythonConnection is a concise, straightforward guide to setting up a connection with a MongoDB database, executing write operations, and reading the data, all from Python. In just 30 lines of Python code, you'll be able to establish a connection to your database, write profiles of three individuals, and read the results back.
+MongoDB-PythonConnection is a concise, straightforward guide to setting up a connection with a MongoDB database, executing write operations, and reading the data, all from Python. In just 15 lines of Python code, you'll be able to establish a connection to your database, write profiles of three individuals, and read the results back.
 
 This guide provides a simple, effective way to practice connecting, writing, and reading from a MongoDB database using Python. The concept is to use the PyMongo module in Python to demonstrate database operations.
 
@@ -19,25 +19,20 @@ This guide provides a simple, effective way to practice connecting, writing, and
 
 ```
 from pymongo import MongoClient
-
-uri = 'mongodb+srv://tosniki91:your_password@clustervkapture.b6tox4s.mongodb.net'
-password = 'your_password'
-
-client = MongoClient(uri, password=password)
-db = client.sample_mflix
-collection = db.comments
-
-print("Executing query...")  # Добавленная инструкция для вывода
-
-result = collection.find_one({"key": "value"})
-print(result)
-
-
-# Вы можете использовать переменную "db" для выполнения операций с базой данных, например:
-collection = db.comments
-result = collection.find({"key": "value"})
-for document in result:
-    print(document)
+client = MongoClient('mongodb+srv://tosniki91:N25kbverb@clustervkapture.b6tox4s.mongodb.net/')
+try:
+    client.admin.command('ping')
+    print("Пинговали вашу базу данных. Успешное подключение к MongoDB!")
+except Exception as e:
+    print(e)
+db = client['my_database']
+collection = db['my_collection']
+docs = [{"name": "John", "age": 30, "city": "New York"},
+        {"name": "Jane", "age": 25, "city": "Chicago"},
+        {"name": "Jim", "age": 35, "city": "Los Angeles"}]
+collection.insert_many(docs)
+for doc in collection.find():
+    print(doc)
 ```
 
 ## How to Run
