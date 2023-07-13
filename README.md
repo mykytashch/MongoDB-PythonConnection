@@ -19,7 +19,7 @@ This guide provides a simple, effective way to practice connecting, writing, and
 
 ```
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://tosniki91:N25kbverb@clustervkapture.b6tox4s.mongodb.net/')
+client = MongoClient('mongodb+srv://tosniki91:password@clustervkapture.b6tox4s.mongodb.net/')
 try:
     client.admin.command('ping')
     print("Пинговали вашу базу данных. Успешное подключение к MongoDB!")
