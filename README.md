@@ -4,19 +4,6 @@
 ## Introduction
 MongoDB-PythonConnection is a concise, straightforward guide to setting up a connection with a MongoDB database, executing write operations, and reading the data, all from Python. In just 15 lines of Python code, you'll be able to establish a connection to your database, write profiles of three individuals, and read the results back.
 
-This guide provides a simple, effective way to practice connecting, writing, and reading from a MongoDB database using Python. The concept is to use the PyMongo module in Python to demonstrate database operations.
-
-## Key Features
-* **Easy Connection**: Uses `pymongo.MongoClient` to connect to your MongoDB database.
-* **Data Writing**: Demonstrates how to insert multiple documents into your MongoDB database.
-* **Data Reading**: Shows you how to retrieve and print all documents from your MongoDB collection.
-
-## Prerequisites
-* Python 3.x installed on your machine.
-* PyMongo module installed on your Python environment.
-* Access to a MongoDB database.
-
-
 ```
 from pymongo import MongoClient
 client = MongoClient('mongodb+srv://tosniki91:password@clustervkapture.b6tox4s.mongodb.net/')
@@ -34,6 +21,18 @@ collection.insert_many(docs)
 for doc in collection.find():
     print(doc)
 ```
+
+This guide provides a simple, effective way to practice connecting, writing, and reading from a MongoDB database using Python. The concept is to use the PyMongo module in Python to demonstrate database operations.
+
+## Key Features
+* **Easy Connection**: Uses `pymongo.MongoClient` to connect to your MongoDB database.
+* **Data Writing**: Demonstrates how to insert multiple documents into your MongoDB database.
+* **Data Reading**: Shows you how to retrieve and print all documents from your MongoDB collection.
+
+## Prerequisites
+* Python 3.x installed on your machine.
+* PyMongo module installed on your Python environment.
+* Access to a MongoDB database.
 
 ## How to Run
 Ensure you have met all prerequisites before proceeding. 
