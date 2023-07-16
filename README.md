@@ -58,3 +58,7 @@ To run the MongoDB-PythonConnection script inside a Docker container, follow the
 With MongoDB-PythonConnection, connecting, writing, and reading from a MongoDB database has never been easier. Whether you're a beginner seeking to understand database operations or an experienced developer looking for a quick refresher, this guide will prove to be an invaluable resource. Get started today and master MongoDB operations using Python!
 
 **Disclaimer**: It's important to remember to keep sensitive information like your MongoDB URI private and secure.
+
+## Author
+
+MongoDB-PythonConnection is developed by Mykyta Shcheholevatyi
