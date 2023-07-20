@@ -1,6 +1,14 @@
 
 # MongoDB-PythonConnection: A Hands-on Guide
 
+
+
+[![GitHub Follow](https://img.shields.io/github/followers/mykytashch?style=social)](https://github.com/mykytashch)
+[![GitHub Stars](https://img.shields.io/github/stars/mykytashch/SynchroMessage)](https://github.com/mykytashch/SynchroMessage/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mykytashch/SynchroMessage)](https://github.com/mykytashch/SynchroMessage/network)
+
+
+
 ## Introduction
 MongoDB-PythonConnection is a concise, straightforward guide to setting up a connection with a MongoDB database, executing write operations, and reading the data, all from Python. In just 15 lines of Python code, you'll be able to establish a connection to your database, write profiles of three individuals, and read the results back.
 
